@@ -24,11 +24,15 @@
     <nav>
       <ul>
         <li>
-          <a href="#section1">Section 1</a>
+          <a href="#section1">upper page 1</a>
         </li>
         <li>
-          <a href="#section2">Section 2</a>
+          <a href="#section2">lower Page 2</a>
         </li>
+        <li>
+          <a href="#contact">contact me</a>
+        </li>
+
 
       </ul>
 
@@ -41,40 +45,117 @@
       <h2>
         learning html
       </h2>
-      <P> this is ken has arrived </P>
-      <!-- read pic you add title on it when arrow is pointed on the picture-->
-      <!--img src="img/eve-9726477_1280.jpg" alt="html" title ="i am learning"-->
+      <P> this is my first web page </P>
+      <section>
+        <h3> html</h3>
 
-      <img src="img/eve-9726477_1280.jpg" alt="html" width="600" height="600">
+        <!-- read pic you add title on it when arrow is pointed on the picture-->
+        <!--img src="img/eve-9726477_1280.jpg" alt="html" title ="i am learning"-->
 
+        <img src="img/hand-9723837_1280.jpg" alt="hand leave" width="600" height="600">
 
-      <h3>
-        great to be here
-      </h3>
+        <figure>
+          <figcaption>
+            This is a picture of a person
+          </figcaption>
+          <p> <code> &lt; h1 &gt; hello world &lt; /h1 &gt; </code> </p>
+        </figure>
+      </section>
+      <section>
+        <h3>
+          my daily schedule
+        </h3>
+        <p> let me tell you how</p>
+        <hr>
+        <ol>
+          <li> this is the first item</li>
+          <li> this is the second item</li>
+          <li> this is the third item</li>
+        </ol>
+        <P> great leraning guys mr ken <abbr title="Kenneth keneye"><a
+              href="https://developer.mozilla.org/">KK</a></abbr>.
+        <p></p>
+        <aside>
+          <details>
+            <summary>guess the <mark>hour</mark> i code a day</summary>
+            <p> i start by <time datetime="08:00">8am</time> and i write code for <time datetime="PT3H">3 HOURS</time>
+              every morning</p>
+          </details>
+        </aside>
+        <br>
+        <table>
+          <caption> my daily schedule</caption>
+          <thead>
+            <tr>
+              <th> &nbsp;</th>
+              <th scope="col">time</th>
+              <th scope="col">activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"> morning</th>
+              <td>
+                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+              <td>
+                write code
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"> break</th>
+              <td>
+                <time datetime="11:00">11am</time> - <time datetime="12:00">12pm</time>
+              <td>
+                eat launch
+              </td>
+            </tr>
+            <tr>
 
-      <P> great leraning guys mr ken <abbr title="Kenneth keneye"><a
-            href="https://developer.mozilla.org/">KK</a></abbr>.
-      <p></p>
-      <hr>
-      <ol>
-        <li> this is the first item</li>
-        <li> this is the second item</li>
-        <li> this is the third item</li>
-      </ol>
+              <th scope="row"> afternoon</th>
+              <td>
+                <time datetime="12:00">12pm</time> - <time datetime="17:00">5pm</time>
+              <td>
+                study for other courses
+              </td>
+            </tr>
+            <tr>
+              <th scope="row"> evening</th>
+              <td rowspan="2"> all other time </td>
+              <td>free time</td>
+            </tr>
+            <tr>
+              <th scope="row"> night </th>
+              <td> sleep</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3"> and that's what i do daily </td>
+            </tr>
+        </table>
+      </section>
     </article>
     <hr>
-    <section id="section2">
-      <h2> learning 2 </h2>
+    <article id="section2">
+      <h2> i am aslo planining a vacation </h2>
       <P> this is ken has arrived </P>
       <h3> great to be here </h3>
       <!-- loading="lazy"-->
-      <figure>
-        <img src="img/sunset-3495108_1280.jpg" alt=" sunset" title="i am learning sunset" width="600" height="600"
-          loading="lazy">
-        <figcaption>
-          This is a sunset
-        </figcaption>
-      </figure>
+      <section>
+        <h2> i am aslo planining </h2>
+        <code> &lt; h1 &gt; hello world &lt; /h1 &gt; </code>
+
+        <figure>
+          <img src="img/sunset-3495108_1280.jpg" alt=" sunset" title="i am learning sunset" width="600" height="600"
+            loading="lazy">
+          <figcaption>
+            This is a sunset
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2> i am aslo planining enjoyment </h2>
+      </section>
       <ul>
         <li>
           <P> great leraning guys </P>
@@ -88,6 +169,7 @@
         <li> cry
         <li> sleep
       </ul>
+
       <!--discribtion list-->
       <figure>
         <img src="img/care-9719575_640.jpg" alt="html345" title="i am learning ken" width="600" height="400"
@@ -109,7 +191,103 @@
 
       </dL>
 
-    </section>
+    </article>
+    <hr>
+    <article id="contact">
+      <h2>Contact Me</h2>
+      <p>If you would like contact me</p>
+      <form action="https://httpbin.org/get" method ="get">
+        <fieldset>
+          <legend>Personal info</legend>
+        <p>
+        <label for="firstName">First name:</label>
+        <input type="text" name="firstName" id="firstName" placeholder="ken"
+        autocomplete="on" required autofocus>
+        </p>
+        <p>
+         <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" placeholder="sha"
+        autocomplete="on" required>
+       </p>
+       <p>
+         <label for="password">password:</label>
+        <input type="password" name="password" id="password" placeholder="your secret"
+         required>
+       </p>
+        <p>
+         <label for="phone">phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="5555555555"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" 
+            required>
+       </p>
+       <p>
+         <label for="decade"> favorite Decade:</label>
+        <input type="number" name="decade" id="decade" min="1950" max="2030" step="10"  value="1980">
+       </p>
+        <p>
+          <label for="coffee">favorite Coffee:</label>
+          <select name="coffee" id="coffee" multiple size="5">
+            <optgroup label="Coffees">
+            <option value="regular coffee">Regular coffee</option>
+            <option value="iced coffee">iced coffee</option>
+            </optgroup>
+            <optgroup label="espresso Drinks">
+            <option value="lette" selected>lette</option>
+            <option value="cappuccino">cappuccino</option>
+            <option value="cortado">cortado</option>
+            </optgroup>
+            <option value="other">other</option>
+          </select>
+        </p>
+      </fieldset>
+      <br>
+      <fieldset>
+       <legend>What is your favorite food?</legend>
+       <p>
+        <input type="radio" name="food" id="tacos" value="tacos">
+        <label for="tacos">Tacos</label>
+       </p>
+       <p>
+        <input type="radio" name="food" id="pizza" value="pizza">
+        <label for="pizza">pizza</label>
+       </p>
+       <p>
+        <input type="radio" name="food" id="other" value="other">
+        <label for="other">other</label>
+       </p>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend> do you have pets </legend>
+        <p>
+          <input type= "checkbox" name="pets" id="dog" value="dog">
+          <label for="dog">Dog</label>
+        </p>
+        <p>
+          <input type= "checkbox" name="pets" id="cat" value="cat">
+          <label for="cat">cat</label>
+        </p>
+        <p>
+          <input type= "checkbox" name="pets" id="goat" value="goat">
+          <label for="goat">goat</label>
+        </p>
+        <p>
+          <input type= "checkbox" name="pets" id="otherpet" value="otherpet">
+          <label for="otherpet">other</label>
+        </p>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend> send me a note </legend>
+        <label for="message">your message</label>
+        <textarea name="message" id="message" cols="37" rows="10" placeholder="enter your message"></textarea>
+      </fieldset>
+      <br>
+      <button type="submit">Submit</button>
+      <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+      <button type="Reset">Reset</button>
+      </form>
+    </article>
   </main>
   <hr>
   <footer>
